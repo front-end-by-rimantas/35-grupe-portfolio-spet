@@ -4,15 +4,15 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 [![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
-# React portfolio
+# Spet portfolio
 
 _35 group website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio-spet/
 
-Design: https://react.theme-land.com/theme-five
+Design: https://spet-gatsby.envytheme.com/digital-agency
 
 ## Project features
 
@@ -27,4 +27,8 @@ Design: https://react.theme-land.com/theme-five
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Dalius: [Github](https://github.com/dalram)
+Marius: [Github](https://github.com/Marabiukas)
+Rokas: [Github](https://github.com/RokasAbra)
+Sergejs: [Github](https://github.com/SergejsRom)
+Arnoldas: [Github](https://github.com/XSYTO)

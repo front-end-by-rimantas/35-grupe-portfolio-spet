@@ -24,9 +24,32 @@
 /* About us: end */
 
 /* Our services: start */
+.services {
+    text-align: center;
+    max-width: 520px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.services .bar {
+    background: #cdf1d8;
+    border-radius: 30px;
+    height: 5px;
+    margin: 20px auto;
+    position: relative;
+    width: 90px;
+}
+.sub-title {
+    display: inline-block;
+    border: 2px solid red;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    padding: 5px 20px;
+    margin-bottom: 25px;
+}
 /* Our services: end */
 
 /* Our projects: start */
+
 /* Our projects: end */
 
 /* Custom designs: start */

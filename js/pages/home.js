@@ -5,41 +5,32 @@
 /* header: start */
 /* header: end */
 
-/* hero: start */
-/* hero: end */
+/* Hero: start */
+/* Hero: end */
 
-/* premium features: start */
-/* premium features: end */
+/* Featured solutions: start */
+/* Featured solutions: end */
 
-/* comunication app: start */
-/* comunication app: end */
+/* About us: start */
+/* About us: end */
 
-/* device manage: start */
-/* device manage: end */
+/* Our services: start */
+/* Our services: end */
 
-/* how app works: start */
-/* how app works: end */
+/* Our projects: start */
+/* Our projects: end */
 
-/* interface slide: start */
-/* interface slide: end */
+/* Custom designs: start */
+/* Customs designs: end */
 
-/* testimonials: start */
-/* testimonials: end */
+/* Pricing: start */
+/* Pricing: end */
 
-/* pricing: start */
-/* pricing: end */
+/* Testimonials: start */
+/* Testimonials: end */
 
-/* FAQ: start */
-/* FAQ: end */
-
-/* team: start */
-/* team: end */
-
-/* app store: start */
-/* app store: end */
-
-/* subscribe: start */
-/* subscribe: end */
+/* News: start */
+/* News: end */
 
 /* contacts: start */
 /* contacts: end */

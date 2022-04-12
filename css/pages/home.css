@@ -30,6 +30,18 @@
 /* Our projects: end */
 
 /* Custom designs: start */
+.proud-projects {
+    text-align: center;
+}
+@media (min-width: 767px){
+.proud-projects {
+    text-align: justify;
+}
+}
+.proud-row {
+    margin: 0;
+    padding: 0;
+}
 /* Customs designs: end */
 
 /* Pricing: start */

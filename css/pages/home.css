@@ -12,13 +12,6 @@
 
 
 /* header: start */
-header > .row {
-    position: absolute;
-    top: 0;
-}
-header > .row > .col-12 > .btn {
-    float: right;
-}
 /* header: end */
 
 /* Hero: start */

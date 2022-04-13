@@ -8,7 +8,7 @@
 
 _35 group website project_
 
-This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
+This project is for educational porpuses only. Pull requests are welcome, but priority for project authors! Thank you for your cooperation!
 
 Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio-spet/
 

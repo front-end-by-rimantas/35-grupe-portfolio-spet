@@ -50,6 +50,7 @@
     margin-left: var(--half-gap);
     margin-right: var(--half-gap);
     background-color: pink;
+    
 }
 
 .row > .reverse {

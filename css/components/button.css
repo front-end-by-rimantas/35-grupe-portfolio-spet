@@ -1,0 +1,55 @@
+.btn {
+    background-color: var(--bg-color-green);
+    color: var(--bg-color-white);
+    padding: 0.5em 1.5em;
+    font-size: 16px;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+}
+
+.header-btn {
+    float: right;
+}
+
+.btn.btn-hero-about:hover {
+    background-color: var(--bg-color-purple);
+    transition: 0.5s;
+}
+
+.btn-gradient {
+    background: var(--btn-color-gradient);
+    border-radius: 5px;
+}
+
+.btn-gradient:hover {
+    background: var(--btn-color-gradient-secondary);
+}
+
+.btn.btn-purple {
+    background-color: var(--bg-color-purple);
+}
+.btn.btn-purple:hover {
+    background-color: var(--bg-color-green);
+}
+.btn.btn-pricing {
+    background: var(--btn-color-gradient-third);
+    color: var(--bg-color-main-font);
+    border-radius: 5px 0px 0px 5px;
+}
+.btn-pricing.right-radius {
+    border-radius: 0px 5px 5px 0px;
+}
+.btn.btn-plans
+.btn.btn-news {
+    border-radius: 24px;
+}
+.btn.btn-plans:hover {
+    background: var(--btn-color-gradient-fouth);
+}
+.btn.btn-news {
+    background-color: var(--bg-color-white);
+}
+.btn.btn-news:hover {
+    background-color: var(--bg-color-green);
+}

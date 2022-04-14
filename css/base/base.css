@@ -1,0 +1,28 @@
+:root {
+    --bg-color-white: #FFFFFF;    
+    --bg-color-green: #44ce6f;
+    --bg-color-lightPurple: #f5dffd;    
+    --bg-color-purple: #c679e3;
+    --bg-color-main-font: #0e314c;
+    --bg-color-secondary-font:  #6084a4;    
+    --bg-color-gradient: linear-gradient(to right top,#d5fefd,#e0fdff,#effbff,#fbfaff,#fffcff);
+    --btn-color-gradient: linear-gradient(90deg,#ee0979,#ff6a00);
+    --btn-color-gradient-secondary: linear-gradient(135deg,#23bdb8,#43e794);
+
+
+}
+
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}

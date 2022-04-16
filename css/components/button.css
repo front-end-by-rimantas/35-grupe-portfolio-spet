@@ -1,4 +1,5 @@
 .btn {
+    cursor: pointer;
     background-color: var(--bg-color-green);
     color: var(--bg-color-white);
     padding: 0.5em 1.5em;
@@ -6,17 +7,43 @@
     display: inline-block;
     border: none;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
 
 .header-btn {
     float: right;
 }
 
-.btn.btn-hero-about:hover {
+.btn-hero-about::after,
+.btn-hero-about::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
     background-color: var(--bg-color-purple);
-    transition: 0.5s;
+    transform: scaleX(0);
+    transition: .5s ease-in;
+    z-index: -1;
 }
-
+.btn-hero-about::after {
+    left: 0;
+    transform-origin: left;
+}
+.btn-hero-about:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.btn-hero-about::before {
+    right: 0;
+    transform-origin: right;
+}
+.btn-hero-about:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+    
+}
 .btn-gradient {
     background: var(--btn-color-gradient);
     border-radius: 5px;
@@ -24,6 +51,7 @@
 
 .btn-gradient:hover {
     background: var(--btn-color-gradient-secondary);
+    
 }
 
 .btn.btn-purple {

@@ -16,7 +16,9 @@
 }
 
 .btn-hero-about::after,
-.btn-hero-about::before {
+.btn-hero-about::before,
+.btn-purple::after,
+.btn-purple::before {
     content: "";
     width: 50%;
     height: 100%;
@@ -48,17 +50,26 @@
     background: var(--btn-color-gradient);
     border-radius: 5px;
 }
-
+.btn.btn-purple {
+    background-color: var(--bg-color-purple);
+    text-transform: uppercase;
+}
 .btn-gradient:hover {
     background: var(--btn-color-gradient-secondary);
     
 }
-
-.btn.btn-purple {
-    background-color: var(--bg-color-purple);
-}
-.btn.btn-purple:hover {
+.btn-purple:hover::after,
+.btn-purple:hover::before {
     background-color: var(--bg-color-green);
+    transform: scaleX(1);
+}
+.btn-purple::after {
+    left: 0;
+    transform-origin: left;
+}
+.btn-purple::before {
+    right: 0;
+    transform-origin: right;
 }
 .btn.btn-pricing {
     background: var(--btn-color-gradient-third);

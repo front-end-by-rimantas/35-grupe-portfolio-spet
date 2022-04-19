@@ -1,6 +1,7 @@
 :root {
     --bg-color-white: #FFFFFF;    
     --bg-color-green: #44ce6f;
+    --bg-color-lightGreen: #cdf1d8;
     --bg-color-lightPurple: #f5dffd;    
     --bg-color-purple: #c679e3;
     --bg-color-main-font: #0e314c;
@@ -8,8 +9,8 @@
     --bg-color-gradient: linear-gradient(to right top,#d5fefd,#e0fdff,#effbff,#fbfaff,#fffcff);
     --btn-color-gradient: linear-gradient(90deg,#ee0979,#ff6a00);
     --btn-color-gradient-secondary: linear-gradient(135deg,#23bdb8,#43e794);
-
-
+    --btn-color-gradient-third: linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd);
+    --btn-color-gradient-fouth: linear-gradient(to right top,#a3a3a3,#9a9a9a,#909090,#878787,#7e7e7e);
 }
 
 body,
@@ -31,6 +32,7 @@ body {
 .section-title {
     font-size: 30px;
     color: var(--bg-color-main-font);
+    margin-bottom: 60px;
 }
 p {
     color: var(--bg-color-secondary-font);
@@ -42,4 +44,35 @@ h1 {
 h3 {
     font-size: 18px;
     font-weight: normal;
+}
+
+hr {
+    content:'';
+    display: inline-block;
+    background-color: var(--bg-color-lightGreen);
+    height: 5px;
+    width: 90px;
+    bottom: 20px;
+    left: 0;
+    position: relative;
+    overflow: visible;
+    border: none;
+}       
+hr:after {
+    content: "";
+    position: absolute;
+    background-color: var(--bg-color-green);
+    width: 10px;
+    height: 10px;
+    top: -2.5px;
+    border-radius: 100%;
+    animation: anim-hr 3s linear infinite; 
+}
+@keyframes anim-hr {
+    0% {
+        left: -2%;
+    }
+    100% {
+        left: 95%;
+    }
 }

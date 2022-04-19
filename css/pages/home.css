@@ -1,15 +1,16 @@
 /* base */
-@import '../base/base.css';
-@import '../base/layout.css';
+@import "../base/base.css";
+@import "../base/layout.css";
 
 /* 3rd-party */
+@import "../3rd-party/font-awesome.min.css";
 
 /* components */
-@import '../components/button.css';
-@import '../components/form.css';
+@import "../components/button.css";
+@import "../components/form.css";
+@import "../components/badge.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
-
 
 /* header: start */
 /* header: end */
@@ -18,16 +19,25 @@
 /* Hero: end */
 
 /* Featured solutions: start */
-.badge {
-    background-color: #f5dffd;
-    padding: 5px 20px;
-    font-size: 16px;
-    color: #c679e3;
-    margin-bottom: 16px;
-    border-radius: 25px;
-    position: relative;
-    bottom: 20px;
+.featured-titles a {
+  display: block;
+  margin: 12px 0px;
+  text-decoration: none;
+  color: var(--bg-color-main-font);
 }
+
+.featured-titles i {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 30px;
+  font-size: 45px;
+  color: var(--bg-color-green);
+}
+
+.featured-titles a:hover {
+  color: var(--bg-color-green);
+}
+
 /* Featured solutions: end */
 
 /* About us: start */
@@ -56,4 +66,4 @@
 /* contacts: end */
 
 /* footer: start */
-/* footer: end */ 
+/* footer: end */

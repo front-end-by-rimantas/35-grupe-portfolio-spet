@@ -26,17 +26,34 @@
   color: var(--bg-color-main-font);
 }
 
-.featured-titles i {
-  position: relative;
+.ico i {
   padding-left: 25px;
   margin-bottom: 30px;
   font-size: 45px;
   color: var(--bg-color-green);
 }
 
-.featured-titles a:hover {
-  color: var(--bg-color-green);
+.ico img {
+  position: relative;
+  top: -25px;
+  left: -60px;
+  z-index: -1;
 }
+
+.featured-titles a:hover,
+.learn-more a:hover {
+  color: var(--bg-color-green);
+  transition-duration: 1s;
+}
+
+.fa-plus-circle {
+  padding: 0;
+  margin-right: 5px;
+  font-size: 20px;
+  color: var(--bg-color-main-font);
+}
+
+
 
 /* Featured solutions: end */
 

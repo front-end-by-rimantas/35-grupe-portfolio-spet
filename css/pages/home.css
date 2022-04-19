@@ -12,16 +12,22 @@
 
 
 /* header: start */
-
-.header-btn {
-    float: right;
-}
 /* header: end */
 
 /* Hero: start */
 /* Hero: end */
 
 /* Featured solutions: start */
+.badge {
+    background-color: #f5dffd;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: #c679e3;
+    margin-bottom: 16px;
+    border-radius: 25px;
+    position: relative;
+    bottom: 20px;
+}
 /* Featured solutions: end */
 
 /* About us: start */

@@ -137,4 +137,9 @@
 /* contacts: end */
 
 /* footer: start */
+.footer-back-img {
+    background-image: url(../../img/footer-section-11/Bg-Static-map.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
 /* footer: end */

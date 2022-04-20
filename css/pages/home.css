@@ -15,7 +15,7 @@
 .container.header{
     margin-bottom: 0;
     padding: 0;
-    /* position: fixed; */
+    position: fixed;
     border-bottom: 1px solid #eee;
     
 }

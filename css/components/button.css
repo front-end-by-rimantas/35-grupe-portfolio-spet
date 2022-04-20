@@ -14,7 +14,24 @@
 .header-btn {
     float: right;
     margin-right: 20px;
+    padding: 0.5em 1em;
     text-transform: uppercase;
+    font-weight: 700;
+}
+@media (max-width: 1000px) {
+    .header-btn {
+        font-size: 10px;
+    }
+}
+@media (min-width: 1000px) {
+    .header-btn {
+        font-size: 13px;
+    }
+}
+@media (min-width: 1200px) {
+    .header-btn {
+        font-size: 16px;
+    }
 }
 
 .btn-hero-about::after,

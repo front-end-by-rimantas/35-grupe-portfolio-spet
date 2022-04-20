@@ -139,7 +139,8 @@
 /* footer: start */
 .footer-back-img {
     background-image: url(../../img/footer-section-11/Bg-Static-map.png);
-    object-fit: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-color: #F7FAFD;
 }
 /* footer: end */

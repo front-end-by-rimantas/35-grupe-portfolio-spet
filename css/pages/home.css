@@ -1,15 +1,16 @@
 /* base */
-@import '../base/base.css';
-@import '../base/layout.css';
+@import "../base/base.css";
+@import "../base/layout.css";
 
 /* 3rd-party */
+@import "../3rd-party/font-awesome.min.css";
 
 /* components */
-@import '../components/button.css';
-@import '../components/form.css';
+@import "../components/button.css";
+@import "../components/form.css";
+@import "../components/badge.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
-
 
 /* header: start */
 /* header: end */
@@ -18,16 +19,58 @@
 /* Hero: end */
 
 /* Featured solutions: start */
-.badge {
-    background-color: #f5dffd;
-    padding: 5px 20px;
-    font-size: 16px;
-    color: #c679e3;
-    margin-bottom: 16px;
-    border-radius: 25px;
-    position: relative;
-    bottom: 20px;
+.solutions {
+  position: relative;
 }
+
+.featured-titles a {
+  display: block;
+  margin: 12px 0px;
+  text-decoration: none;
+  color: var(--bg-color-main-font);
+}
+
+.solution-box {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.ico i {
+
+  padding-left: 25px;
+  margin-bottom: 30px;
+  font-size: 45px;
+  color: var(--bg-color-green);
+}
+
+.ico img {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: -1;
+}
+
+.featured-titles a:hover,
+.fa-plus-circle:hover {
+  color: var(--bg-color-green);
+  transition-duration: 1s;
+}
+
+.fa-plus-circle {
+  padding: 0;
+  margin-right: 5px;
+  font-size: 20px;
+  color: var(--bg-color-main-font);
+}
+
+.solutions-moving-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
+
+
 /* Featured solutions: end */
 
 /* About us: start */
@@ -94,4 +137,4 @@
 /* contacts: end */
 
 /* footer: start */
-/* footer: end */ 
+/* footer: end */

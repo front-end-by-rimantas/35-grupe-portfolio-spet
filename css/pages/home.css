@@ -35,6 +35,10 @@
 .navigation > .nav-links:hover {
     color: var(--bg-color-green);
 }
+.fa-chevron-down {
+    font-size: 0.55em;
+    margin: 8px 0px 0px 4px;
+}
 /* header: end */
 
 /* Hero: start */

@@ -65,6 +65,44 @@
 /* Pricing: end */
 
 /* Testimonials: start */
+.testimonial {
+    background: var(--bg-color-gradient);
+    position: relative;
+    height: 800px;
+}
+
+.moving-img-1 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.moving-img-2 {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+}
+.moving-img-3 {
+    position: absolute;
+    top: 550px;
+    left: 300px;
+}
+.moving-img-4 {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+.moving-img-5 {
+    position: absolute;
+    top: 350px;
+    right: 150px;
+}
+.moving-img-6 {
+    position: absolute;
+    top: 550px;
+    right: 330px;
+}
+
 /* Testimonials: end */
 
 /* News: start */

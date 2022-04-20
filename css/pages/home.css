@@ -44,6 +44,21 @@
 /* Customs designs: end */
 
 /* Pricing: start */
+.pricing {
+    position: relative;
+}
+
+.moving-img-7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pricing-boxes {
+    height: 500px;
+    margin: 10px;
+    background: var(--bg-color-gradient);
+}
 /* Pricing: end */
 
 /* Testimonials: start */

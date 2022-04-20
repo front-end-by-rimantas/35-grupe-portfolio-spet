@@ -161,7 +161,7 @@
 
 .footer-links > li > i,
 .footer-links > li > p {
-  display: inline-block;
+  display: inline;
 }
 
 .footer-icons > a > i {

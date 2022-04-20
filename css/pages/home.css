@@ -19,6 +19,10 @@
 /* Hero: end */
 
 /* Featured solutions: start */
+.solutions {
+  position: relative;
+}
+
 .featured-titles a {
   display: block;
   margin: 12px 0px;
@@ -26,7 +30,13 @@
   color: var(--bg-color-main-font);
 }
 
+.solution-box {
+  margin-bottom: 30px;
+  position: relative;
+}
+
 .ico i {
+
   padding-left: 25px;
   margin-bottom: 30px;
   font-size: 45px;
@@ -34,14 +44,14 @@
 }
 
 .ico img {
-  position: relative;
-  top: -25px;
-  left: -60px;
+  position: absolute;
+  top: -20px;
+  left: 0;
   z-index: -1;
 }
 
 .featured-titles a:hover,
-.learn-more a:hover {
+.fa-plus-circle:hover {
   color: var(--bg-color-green);
   transition-duration: 1s;
 }
@@ -53,6 +63,12 @@
   color: var(--bg-color-main-font);
 }
 
+.solutions-moving-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
 
 
 /* Featured solutions: end */

@@ -24,6 +24,12 @@
     width: 100%;
 }
 
+.navigation > .nav-links {
+    text-decoration: none;
+    color: var(--bg-color-secondary-font);
+    margin-left: 20px;
+    height: 39px;
+}
 /* header: end */
 
 /* Hero: start */

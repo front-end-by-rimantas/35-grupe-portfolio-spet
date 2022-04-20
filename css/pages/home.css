@@ -151,10 +151,14 @@
 .copyright-a {
   text-decoration: none;
   color: var(--bg-color-main-font);
-  font-weight: 600;
+  font-weight: 550;
 }
 
 .copyright-a:hover {
   color: var(--bg-color-green);
+  transition: 0.5s;
+}
+.copyright-a:not(:hover) {
+  transition: 0.5s;
 }
 /* footer: end */

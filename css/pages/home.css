@@ -17,6 +17,7 @@
     padding: 0;
     position: fixed;
     border-bottom: 1px solid #eee;
+    background: var(--bg-color-white);
     
 }
 .container.header > .row {
@@ -29,6 +30,9 @@
     color: var(--bg-color-secondary-font);
     margin-left: 20px;
     height: 39px;
+}
+.navigation > .nav-links:hover {
+    color: var(--bg-color-green);
 }
 /* header: end */
 

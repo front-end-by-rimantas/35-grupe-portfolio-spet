@@ -13,6 +13,7 @@
 
 .header-btn {
     float: right;
+    margin-right: 20px;
 }
 
 .btn-hero-about::after,

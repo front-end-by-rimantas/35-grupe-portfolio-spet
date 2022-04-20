@@ -12,6 +12,18 @@
 
 
 /* header: start */
+.container.header{
+    margin-bottom: 0;
+    padding: 0;
+    /* position: fixed; */
+    border-bottom: 1px solid #eee;
+    
+}
+.container.header > .row {
+    margin: 20px;
+    width: 100%;
+}
+
 /* header: end */
 
 /* Hero: start */

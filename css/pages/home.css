@@ -143,7 +143,28 @@
     background-repeat: no-repeat;
     background-color: #F7FAFD;
 }
-.footer-icons i {
+.logo-margin {
+  margin-bottom: 20px;
+  margin-right: 100px;
+}
+.margin {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.footer-links > li,
+.footer-links > li > a {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 5px 0 5px 0;
+  display: block;
+}
+
+.footer-links > li > i,
+.footer-links > li > p {
+  display: inline-block;
+}
+
+.footer-icons > a > i {
   padding: 7px;
   width: 35px;
   height: 35px;
@@ -151,6 +172,7 @@
   line-height: 17px;
   text-align: center;
   margin-top: 5px;
+  display: inline-block;
 }
 .fa-facebook {
   -webkit-text-stroke: 1px var(--bg-color-secondary-font);

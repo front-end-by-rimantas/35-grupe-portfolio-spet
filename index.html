@@ -51,19 +51,19 @@
 
     <!-- Header: start -->
 
-    <header class="container">
+    <header class="container header">
       <div class="row">
         <div class="col-12">
           <img src="./img/logo.png" alt="Logo">
-          <nav class="hidden visible-md">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Pages</a>
-            <a href="#">Shop</a>
-            <a href="#">Blog</a>
-            <a href="#">Contacts</a> 
+          <nav class="hidden visible-md navigation">
+            <a href="#" class="nav-links">Home<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#" class="nav-links">About<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#" class="nav-links">Pages<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#" class="nav-links">Shop<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#" class="nav-links">Blog<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#" class="nav-links">Contacts</a> 
           </nav>
-          <a href="#" class="btn header-btn btn-gradient">Contact us</a>
+          <a href="#" class="btn header-btn header-btn-lg btn-gradient">Contact us</a>
         </div>
       </div>
     </header>
@@ -80,7 +80,7 @@
             <a href="#" class="btn btn-hero-about">Get started</a>
           </div>
           <div class="col-12 col-lg-6">
-            <img src="#" alt="banner image">
+            <img src="./img/hero-section-2/section-1-main.png" alt="banner image">
           </div>
         </div>
       </section>
@@ -88,40 +88,70 @@
 
     <!-- Featured solutions: start -->
 
-    <section class="container">
+    <section class="container solutions">
+      <img src="./img/solutions-section-3/moving-img.png" alt="img" class="solutions-moving-img anim-downUp">
       <div class="row">      
         <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 center">
         <span class="badge">What we offer</span>
         <h2 class="section-title">Our Featured Solutions</h2>
         <hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quisquam, officiis nobis consequuntur, voluptatem iure aspernatur aliquam </p>
+       </div>
+      </div>
         
+      <div class="row featured-titles">
+        <div class="col-12 col-sm-6 col-lg-3 solution-box">
+          <div class="ico">
+            <i class="fa fa-rocket fa-fw" aria-hidden="true"></i>
+            <img src="./img/solutions-section-3/icons-bg-img.png" alt="img">
+          </div>
+        <h3>
+          <a href="#" class="">Programmatic Advertising</a>
+        </h3>
+        <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore.</p>
+        <a href="#" >
+          <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+          Learn More</a>
         </div>
-      </div>  
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-3">
-        <img src="#" alt="Ikonele">
-        <a href="#" class="">Programmatic Advertising</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae similique quam aspernatur dicta minima voluptatibus dolor. Eligendi at fugit eligendi</p>
-        <a href="#" class="">Learn More</a>
+        <div class="col-12 col-sm-6 col-lg-3 solution-box">
+          <div class="ico">
+            <i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i>
+            <img src="./img/solutions-section-3/icons-bg-img.png" alt="img">
+          </div>
+          <h3>
+            <a href="#" class="">Strategy & Research</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore.</p>
+          <a href="#" >
+            <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+            Learn More</a>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-          <img src="#" alt="Ikonele">
-          <a href="#" class="">Strategy & Research</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corrupti, repellat fuga officia sapiente officiis nam maxime tempora</p>
-          <a href="#" class="">Learn More</a>
+        <div class="col-12 col-sm-6 col-lg-3 solution-box">
+          <div class="ico">
+            <i class="fa fa-laptop fa-fw" aria-hidden="true"></i>
+            <img src="./img/solutions-section-3/icons-bg-img.png" alt="img">
+          </div> 
+          <h3>
+            <a href="#" class="">
+              Design & Development</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore.t</p>
+          <a href="#" >
+            <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+            Learn More</a>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-          <img src="#" alt="Ikonele">
-          <a href="#" class="">Design & Development</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quisquam adipisci, nihil possimus deserunt</p>
-          <a href="#" class="">Learn More</a>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-          <img src="#" alt="Ikonele">
-          <a href="#" class="">Branding & Marketing</a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto fugiat inventore earum quam! Ad quibusdam modi quidem? </p>
-          <a href="#" class="">Learn More</a>
+        <div class="col-12 col-sm-6 col-lg-3 solution-box">
+          <div class="ico">
+            <i class="fa fa-wpexplorer fa-fw" aria-hidden="true"></i>
+            <img src="./img/solutions-section-3/icons-bg-img.png" alt="img">
+          </div>
+          <h3>
+            <a href="#" class="">Branding & Marketing</a>
+          </h3>
+          <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore. </p>
+            <a href="#" >
+              <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+              Learn More</a>
         </div>
       </div>
 
@@ -133,7 +163,7 @@
 
     <section class="container">
       <div class="row">
-        <img src="#" alt="team" class="col-12 col-lg-6" />
+        <img src="./img/about-us-section-4/main-img.png" alt="team" class="col-12 col-lg-6" />
         <div class="col-12 col-lg-6">
 
           <span class="badge">About Us</span>
@@ -294,7 +324,7 @@
     <!-- Customs designs: end -->
 
     <!-- Pricing: start -->
-    <section class="container">
+    <section class="container pricing">
       <div class="row center">
         <div class="col-12">
           <span class="badge">
@@ -311,31 +341,46 @@
       </div>
       <div  class="row">
         <div class="col-sm-4 ml-4 center">
-          <button class="btn">
+          <button class="btn btn-pricing">
             Monthly Plan
           </button>
-          <button class="btn">
+          <button class="btn btn-pricing right-radius">
             Yearly Plan
           </button>
         </div>
       </div>
       <div class="row center">
-              <div class="col-12 col-sm-6 col-lg-4">
-                Free
+              <div class="col-12 col-sm-6 col-lg-4 pricing-boxes">
+                <div class="center pricing-content">
+                  <h3>Free</h3>
+                  <p>Get your business up<br> and running</p>
+                  <p class="month-pricing">$0/m</p>
+                  <button class="btn btn-plans">Get Started Free</button>
+                  <ul class="benefits">
+                    <li class="benefits-list fa fa-check">Drag & Drop Builder</li>
+                    <li class="benefits-list fa fa-check">Lead Generation & Sales</li>
+                    <li class="benefits-list fa fa-check">Boot & Digital Assistants</li>
+                    <li class="benefits-list fa fa-check">Customer Service</li>
+                    <li class="benefits-list fa fa-check">Up to 1000 Subscribers</li>
+                    <li class="benefits-list fa fa-check">Unlimited Broadcasts</li>
+                    <li class="benefits-list fa fa-check">Landing Pages & Web Widgets</li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-4">
+              <div class="col-12 col-sm-6 col-lg-4 pricing-boxes">
                 Pro
               </div>
-              <div class="col-12 col-sm-6 ml-sm-3 col-lg-4 ml-lg-0">
+              <div class="col-12 col-sm-6 ml-sm-3 col-lg-4 ml-lg-0 pricing-boxes">
                 Premium
               </div>
       </div>
+      <div class="moving-img-7 anim-downUp"><img src="./img/pricing-section-8/moving-img.png" alt="movingImg"></div>
     </section>
     <!-- Pricing: end -->
 
     <!-- Testimonials: start -->
 
-    <section class="container">
+    <section class="container testimonial">
       <div class="row">
         <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-8 ml-xl-2 center">
           <span class="badge">Testimonials</span>
@@ -352,12 +397,12 @@
           <div>SLIDES</div>
         </div>
       </div>
-      <!--- <img src="#" alt="Photo">
-      <img src="#" alt="Photo">
-      <img src="#" alt="Photo">
-      <img src="#" alt="Photo">
-      <img src="#" alt="Photo">
-      <img src="#" alt="Photo"> --->
+      <div class="moving-img-1 anim-downUp-faster hidden"><img src="./img/testimonials-section-9/moving-img-1.png" alt="movingImg"></div>
+      <div class="moving-img-2 anim-leftRight"><img src="./img/testimonials-section-9/moving-img-2.png" alt="movingImg"></div>
+      <div class="moving-img-3 anim-downUp"><img src="./img/testimonials-section-9/moving-img-3.png" alt="movingImg"></div>
+      <div class="moving-img-4 anim-downUp-faster"><img src="./img/testimonials-section-9/moving-img-4.png" alt="movingImg"></div>
+      <div class="moving-img-5 anim-leftRight"><img src="./img/testimonials-section-9/moving-img-5.png" alt="movingImg"></div>
+      <div class="moving-img-6 anim-downUp"><img src="./img/testimonials-section-9/moving-img-6.png" alt="movingImg"></div>
     </section> 
     <!-- Testimonials: end -->
 
@@ -452,22 +497,21 @@
     <!-- contacts: end -->
 
     <!-- footer: start -->
-    <section class="container">
+    <section class="container footer-back-img">
       <div class="row">
-           <div class="col-12 col-md-6 col-lg-3">
-                <div>
-                  <div>
-                    <a href="#">
-                      <img src="#" alt="logo">
+           <div class="col-12 col-sm-6 col-lg-3">
+             <div>
+               <a href="#">
+                      <img class="logo-margin" src="./img/logo.png" alt="logo">
                     </a>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-                </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+             </div>
+                    
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div>
-                  <h3>Company</h3>
-                  <ul>
+                  <h3 class="margin">Company</h3>
+                  <ul class="footer-links">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Features</a></li>
@@ -476,10 +520,10 @@
                   </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3">
               <div>
-                <h3>Support</h3>
-                <ul>
+                <h3 class="margin">Support</h3>
+                <ul class="footer-links">
                   <li><a href="#">FAQ's</a></li>
                   <li><a href="#">Privacy Policy</a></li>
                   <li><a href="#">Terms &amp; Condition</a></li>
@@ -488,33 +532,39 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div>
-                  <h3>Address</h3>
-                  <ul>
+                  <h3 class="margin">Address</h3>
+                  <ul class="footer-links">
                     <li>
-                      <i>icon</i>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
                       <p>27 Divisio St, New York,
                       NY 10002, USA</p>
                     </li>
                     <li>
-                      <i>icon</i>
-                      <p>Email:</p>
-                      <a href="#">spet@gmail.com</a>
+                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                      <p>Email: <a href="#">spet@gmail.com</a> </p>
+                      
                     </li>
                     <li>
-                      <i>icon</i>
-                      <p>Phone:</p>
-                      <a href="#">+ (321) 984 754</a>
+                      <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                      <p>Phone: <a href="#">+ (321) 984 754</a></p>
+                      
                     </li>
                   </ul>
-                  <span>Social media links</span>
+                  <div class="footer-icons">
+                    <a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="http://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    
+                  </div>
                 </div>
             </div>
         </div>
         <div class="row">
-          <div class="col-12">
-            <p>Copyright © 2022 Spet. All rights reserved by <a href="#">EnvyTheme</a></p>
+          <div class="col-12 center copyright">
+            <p>Copyright © 2022 Spet. All rights reserved by <a class="copyright-a" href="#" target="_blank">EnvyTheme</a></p>
           </div>
         </div>
       </div>

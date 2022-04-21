@@ -107,6 +107,43 @@
 /* Our services: end */
 
 /* Our projects: start */
+.projects {
+  background-image: url("/img/projects-section-6/Bg-Static-map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.border {
+  border: 1px dashed gainsboro;
+  border-radius: 5px; 
+}
+
+.projQuestions {
+    position: relative;
+    padding: 25px 25px;
+}
+
+.projectsNumbers {
+  font-size: 30px;
+  color: var(--bg-color-green);
+}
+
+.projectsPositioning {
+    padding: 53px;
+    text-align: center;
+}
+
+.projH {
+    display: block;
+    padding: 5px;
+}
+
+.projQuestions > a {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Our projects: end */
 
 /* Custom designs: start */

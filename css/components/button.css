@@ -103,7 +103,7 @@
     border-radius: 24px;
 }
 .btn.btn-plans:hover {
-    background: var(--btn-color-gradient-fouth);
+    background: var(--btn-color-gradient-fourth);
 }
 .btn.btn-news {
     background-color: var(--bg-color-white);

@@ -128,6 +128,26 @@
     margin: 10px;
     background: var(--bg-color-gradient);
 }
+.pricing-content > * {
+    margin: 10px;
+}
+.month-pricing {
+    font-size: 30px;
+    color: #000;
+}
+.benefits-list {
+    display: block;
+    margin-top: 15px;
+    padding-left: 40px;
+    text-align: left;
+    list-style-type: none;
+}
+.benefits-list.fa-check::before {
+    font-size: 0.85em;
+    margin-right: 5px;
+    color: var(--bg-color-green);
+}
+
 /* Pricing: end */
 
 /* Testimonials: start */

@@ -13,6 +13,32 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
+.container.header{
+    margin-bottom: 0;
+    padding: 0;
+    position: fixed;
+    border-bottom: 1px solid #eee;
+    background: var(--bg-color-white);
+    
+}
+.container.header > .row {
+    margin: 20px;
+    width: 100%;
+}
+
+.navigation > .nav-links {
+    text-decoration: none;
+    color: var(--bg-color-secondary-font);
+    margin-left: 20px;
+    height: 39px;
+}
+.navigation > .nav-links:hover {
+    color: var(--bg-color-green);
+}
+.fa-chevron-down {
+    font-size: 0.55em;
+    margin: 8px 0px 0px 4px;
+}
 /* header: end */
 
 /* Hero: start */

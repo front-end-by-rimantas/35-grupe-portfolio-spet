@@ -13,6 +13,12 @@
     --btn-color-gradient-fouth: linear-gradient(to right top,#a3a3a3,#9a9a9a,#909090,#878787,#7e7e7e);
 }
 
+@font-face {
+    src: url('../../fonts/Poppins/Poppins-Regular.ttf');
+    font-family: 'Poppins';
+}
+
+
 body,
 body * {
     margin: 0;
@@ -24,7 +30,7 @@ body * {
 body {
     display: inline-block;
     width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .center {
     text-align: center;

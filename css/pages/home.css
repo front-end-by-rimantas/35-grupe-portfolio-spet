@@ -98,7 +98,7 @@
     left: 0;
 }
 
-.pricing-boxes {
+.pricing-box {
     height: 500px;
     margin: 10px;
     background: var(--bg-color-gradient);
@@ -109,6 +109,7 @@
 .month-pricing {
     font-size: 30px;
     color: #000;
+    font-weight: 700;
 }
 .benefits-list {
     display: block;
@@ -116,6 +117,7 @@
     padding-left: 40px;
     text-align: left;
     list-style-type: none;
+    color: var(--bg-color-secondary-font);
 }
 .benefits-list.fa-check::before {
     font-size: 0.85em;

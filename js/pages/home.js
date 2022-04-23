@@ -1,5 +1,6 @@
 // component imports
-
+import { pricingData } from '../data/pricingData.js';
+import { pricingRendering } from '../components/pricing.js';
 // components execution
 
 /* header: start */
@@ -24,6 +25,9 @@
 /* Customs designs: end */
 
 /* Pricing: start */
+console.log('Pricing');
+console.log(pricingData);
+pricingRendering();
 /* Pricing: end */
 
 /* Testimonials: start */

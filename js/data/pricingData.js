@@ -1,6 +1,5 @@
 const pricingData = [ {
     title: 'Free',
-    about: 'Get your business up and running',
     currency: '$',
     price: '0',
     period: 'm',
@@ -9,7 +8,6 @@ const pricingData = [ {
 },
 {
     title: 'Pro',
-    about: 'Get your business up and running',
     currency: '$',
     price: '149',
     period: 'm',
@@ -18,7 +16,6 @@ const pricingData = [ {
 },
 {
     title: 'Premium',
-    about: 'Get your business up and running',
     currency: '$',
     price: '179',
     period: 'm',

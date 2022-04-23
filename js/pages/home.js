@@ -27,7 +27,7 @@ import { pricingRendering } from '../components/pricing.js';
 /* Pricing: start */
 console.log('Pricing');
 console.log(pricingData);
-pricingRendering();
+pricingRendering('#pricing-block', pricingData);
 /* Pricing: end */
 
 /* Testimonials: start */

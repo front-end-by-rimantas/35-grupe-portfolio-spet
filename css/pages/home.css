@@ -91,7 +91,11 @@
 .pricing {
     position: relative;
 }
-
+.pricing > .pricing-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .moving-img-7 {
     position: absolute;
     top: 0;

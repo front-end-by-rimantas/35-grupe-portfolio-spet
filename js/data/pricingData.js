@@ -3,7 +3,7 @@ const pricingData = [ {
     currency: '$',
     price: '0',
     period: 'm',
-    button: 'Get Startes Free',
+    button: 'Get Started Free',
     subs: '1000',
 },
 {

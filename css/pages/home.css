@@ -256,6 +256,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: #F7FAFD;
+    padding-bottom: 0;
 }
 .logo-margin {
   margin-bottom: 20px;

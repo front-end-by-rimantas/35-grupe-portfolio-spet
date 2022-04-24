@@ -282,6 +282,10 @@
   margin-left: 5px;
   transition: 0.7s;
 }
+.footer-links > li > a:not(:hover),
+.footer-links > li > p > a:not(:hover) {
+  transition: 0.7s;
+}
 
 
 

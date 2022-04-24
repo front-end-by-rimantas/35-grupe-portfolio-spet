@@ -1,67 +1,87 @@
-function pricingRendering(selector, data) {
-    const mandatoryObjKeys = ["title", "currency", "price", "period"];
-    const optionalObjKeys = ["button", "subs"];
-    const minKeysCount = mandatoryObjKeys.length;
-    const maxKeysCount = minKeysCount + optionalObjKeys.length;
-    let correctObj = true;
-    const allObjKeys = [...mandatoryObjKeys, ...optionalObjKeys];
+function validSelector(selector) {
     if (typeof selector !== "string") {
         return [true, 'Selectorius turi buti stringas'];
     }
     if (selector === '') {
         return [true, 'Selectorius turi buti ne tuscias stringas'];
     }
-    const DOM = document.querySelector(selector);
-    if (!DOM) {
-        return [true, 'Nepavyko rasti selectoriaus elemento'];
-    }
+    return [false, 'OK'];
+}
+function validData(data) {
     if (!Array.isArray(data)) {
         return [true, 'Duomenys turi buti masyve'];
     }
     if (data.length === 0) {
         return [true, 'Duomenyse turi buti bent 1 objektas'];
     }
-    
-
-    
-
-    let HTML = '';
-    for (const item of data) {
+    return [false, 'OK'];
+}
+function validDataItem(item) {
+    const mandatoryObjKeys = ["title", "currency", "price", "period"];
+    const optionalObjKeys = ["button", "subs"];
+    const minKeysCount = mandatoryObjKeys.length;
+    const maxKeysCount = minKeysCount + optionalObjKeys.length;
+    const allObjKeys = [...mandatoryObjKeys, ...optionalObjKeys];
         // tikrinu ar tikras objektas
         if (typeof item !== 'object' 
         || item === null
         || Array.isArray(item)) {
-            continue;
+            return false;
         }
         const keys = Object.keys(item);
         if (keys.length < minKeysCount || keys.length > maxKeysCount) {
-            continue;
+            return false;
         }
-        if (typeof item.title !== 'string' || item.title.trim() === '') {
-            continue;
-        }
-        if (typeof item.currency !== 'string' || item.currency.trim() === '') {
-            continue;
-        }
-        if (typeof item.price !== 'number') {
-            continue;
-        }
-        if (typeof item.period !== 'string' || item.period.trim() === '') {
-            continue;
-        }
+        
         // ieskom ar bent vienas objekte esantis key neturetu jam priklausyti
+        let correctObj = true;
         for (const key of keys) {
             if (!allObjKeys.includes(key)) {
                 correctObj = false;
                 break;
             }
-        // radon netinkama key.
         }
+        // radom netinkama key.
         if (!correctObj) {
+            return false;
+        }
+        // ar yra privalomi raktazodziai
+        if (typeof item.title !== 'string' || item.title.trim() === '') {
+            return false;
+        }
+        if (typeof item.currency !== 'string' || item.currency.trim() === '') {
+            return false;
+        }
+        if (typeof item.price !== 'number') {
+            return false;
+        }
+        if (typeof item.period !== 'string' || item.period.trim() === '') {
+            return false;
+        }
+        return true;
+}
+
+
+function pricingRendering(selector, data) {
+    const selectorRespond = validSelector(selector);
+    if (selectorRespond[0]) {
+        return selectorRespond;
+    }
+    const DOM = document.querySelector(selector);
+    if (!DOM) {
+        return [true, 'Nepavyko rasti selectoriaus elemento'];
+    }
+    const dataRespond = validData(data)
+    if (dataRespond[0]) {
+        return dataRespond;
+    }
+
+    let HTML = '';
+
+    for (const item of data) {
+        if (!validDataItem(item)) {
             continue;
         }
-
-
         HTML += `<div class="col-12 col-sm-6 col-lg-4 pricing-box">
         <div class="center pricing-content">
           <h3>${item.title}</h3>

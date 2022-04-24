@@ -25,8 +25,8 @@ import { pricingRendering } from '../components/pricing.js';
 /* Customs designs: end */
 
 /* Pricing: start */
-console.log('Pricing');
-console.log(pricingData);
+// console.log('Pricing');
+// console.log(pricingData);
 // console.log(pricingRendering('', pricingData));
 // console.log(pricingRendering(null, pricingData));
 // console.log(pricingRendering([null, 0], pricingData));
@@ -45,7 +45,7 @@ console.log(pricingData);
 //     button: 'Start 3 days free trial',
 //     gg: '3300',
 // }]));
-pricingRendering('#pricing-block', pricingData)
+console.log(pricingRendering('#pricing-block', pricingData));
 
 /* Pricing: end */
 

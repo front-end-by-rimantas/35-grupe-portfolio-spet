@@ -40,6 +40,11 @@ body {
     color: var(--bg-color-main-font);
     margin-bottom: 60px;
 }
+.section-title-white {
+    font-size: 30px;
+    color: var(--bg-color-white);
+    margin-bottom: 60px;
+}
 p {
     color: var(--bg-color-secondary-font);
     line-height: 1.6;

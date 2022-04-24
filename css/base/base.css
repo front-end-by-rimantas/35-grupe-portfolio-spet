@@ -42,6 +42,7 @@ body {
 }
 p {
     color: var(--bg-color-secondary-font);
+    line-height: 1.6;
 }
 h1 {
     font-size: 50px;

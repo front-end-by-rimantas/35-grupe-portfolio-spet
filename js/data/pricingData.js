@@ -1,7 +1,7 @@
 const pricingData = [ {
     title: 'Free',
     currency: '$',
-    price: '0',
+    price: 0,
     period: 'm',
     button: 'Get Started Free',
     subs: '1000',
@@ -9,7 +9,7 @@ const pricingData = [ {
 {
     title: 'Pro',
     currency: '$',
-    price: '149',
+    price: 149,
     period: 'm',
     button: 'Start 3 days free trial',
     subs: '3300',
@@ -17,7 +17,7 @@ const pricingData = [ {
 {
     title: 'Premium',
     currency: '$',
-    price: '179',
+    price: 179,
     period: 'm',
     button: 'Start 6 days free trial',
     subs: '10000',

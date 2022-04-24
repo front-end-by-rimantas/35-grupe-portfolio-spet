@@ -34,9 +34,18 @@ console.log(pricingData);
 // console.log(pricingRendering('#pricing-block', [{
 //     a: "c", b: "a",c: "c",b: "g"
 // }]));
-pricingRendering('#pricing-block', pricingData);
-
-
+// console.log(pricingRendering('#pricing-block', [{
+//     a: "c", title: "",c: "c",b: "g"
+// }]));
+// console.log(pricingRendering('#pricing-block', [{
+//     title: 'Pro',
+//     currency: '$',
+//     price: 149,
+//     period: 'm',
+//     button: 'Start 3 days free trial',
+//     gg: '3300',
+// }]));
+pricingRendering('#pricing-block', pricingData)
 
 /* Pricing: end */
 

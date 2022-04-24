@@ -10,7 +10,7 @@
     --btn-color-gradient: linear-gradient(90deg,#ee0979,#ff6a00);
     --btn-color-gradient-secondary: linear-gradient(135deg,#23bdb8,#43e794);
     --btn-color-gradient-third: linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd);
-    --btn-color-gradient-fouth: linear-gradient(to right top,#a3a3a3,#9a9a9a,#909090,#878787,#7e7e7e);
+    --btn-color-gradient-fourth: linear-gradient(to right top,#a3a3a3,#9a9a9a,#909090,#878787,#7e7e7e);
 }
 
 @font-face {
@@ -50,7 +50,8 @@ h1 {
 }
 h3 {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
+    color: var(--bg-color-main-font);
 }
 
 hr {

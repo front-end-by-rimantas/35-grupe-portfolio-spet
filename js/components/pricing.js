@@ -28,6 +28,7 @@ function validDataItem(item) {
         || Array.isArray(item)) {
             return false;
         }
+        // tikriname objekto ilgi.
         const keys = Object.keys(item);
         if (keys.length < minKeysCount || keys.length > maxKeysCount) {
             return false;
@@ -58,7 +59,7 @@ function validDataItem(item) {
         if (typeof item.period !== 'string' || item.period.trim() === '') {
             return false;
         }
-        return true;
+    return true;
 }
 
 

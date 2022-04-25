@@ -694,6 +694,37 @@
     }
 }
 
+/* scroll start */
+.scroll-to-top {
+    --offset: 300px; 
+    margin-top: calc(100vh + var(--offset));
+    position: sticky;
+    bottom: 2em;      
+    right:0; 
+    float: right;
+    text-decoration: none;
+    padding: 10px 7px;
+    color: #fff;
+    background-color: var(--bg-color-purple);
+    border-radius: 10px 0 0 10px;
+    font-size: larger;
+    text-align: center;
+    line-height: 1.1em;
+    width: 2.2em;
+    transition: 0.7s;
+    
+}
+.scroll-to-top:hover {
+    background-color: var(--bg-color-green);
+     
+}
+
+html,
+body {
+scroll-behavior: smooth;
+}
+/* scroll end */
+
 /* @media (min-width: 1399px) {
   :root {
     --container-padding: 80px;

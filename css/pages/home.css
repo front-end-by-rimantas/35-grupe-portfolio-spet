@@ -273,6 +273,7 @@
   list-style-type: none;
   padding-bottom: 9px;
   color: var(--bg-color-secondary-font);
+  transition: all 0.7s;
 }
 .footer-links > li {
   display: flex;
@@ -281,14 +282,7 @@
 .footer-links > li > p > a:hover {
   color: var(--bg-color-green);
   margin-left: 5px;
-  transition: 0.7s;
 }
-.footer-links > li > a:not(:hover),
-.footer-links > li > p > a:not(:hover) {
-  transition: 0.7s;
-}
-
-
 
 .footer-icons > a > i {
   padding: 7px;

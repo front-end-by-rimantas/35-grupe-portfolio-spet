@@ -7,8 +7,6 @@
     display: inline-block;
     border: none;
     text-decoration: none;
-    position: relative;
-    z-index: 1;
 }
 
 .header-btn {
@@ -32,6 +30,12 @@
     .header-btn {
         font-size: 16px;
     }
+}
+
+.btn-hero-about,
+.btn-purple {
+    position: relative;
+    z-index: 1;
 }
 
 .btn-hero-about::after,

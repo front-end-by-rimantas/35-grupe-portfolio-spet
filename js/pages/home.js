@@ -1,6 +1,8 @@
 // component imports
 import { pricingData } from '../data/pricingData.js';
 import { pricingRendering } from '../components/pricing.js';
+import { newsData } from '../data/newsData.js';
+import { renderNews } from '../components/news.js';
 // components execution
 
 /* header: start */
@@ -53,7 +55,7 @@ pricingRendering('#pricing-block', pricingData);
 /* Testimonials: end */
 
 /* News: start */
-
+const [newsContent] = renderNews('#news_section', newsData);
 /* News: end */
 
 /* contacts: start */

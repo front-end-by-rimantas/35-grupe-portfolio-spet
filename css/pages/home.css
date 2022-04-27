@@ -236,6 +236,9 @@
 /* Testimonials: end */
 
 /* News: start */
+.news-section {
+  display: inline-block;
+}
 /* News: end */
 
 /* contacts: start */

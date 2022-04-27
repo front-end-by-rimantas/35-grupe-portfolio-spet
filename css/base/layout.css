@@ -695,11 +695,14 @@
 }
 
 /* scroll start */
+.scroll-to-top-hidden {
+    visibility: hidden;
+}
 .scroll-to-top {
-    position: sticky;
+    visibility: visible;
+    position: fixed;
     bottom: 2em;      
-    right:0; 
-    float: right;
+    right:0;
     text-decoration: none;
     padding: 10px 7px;
     color: #fff;
@@ -716,6 +719,7 @@
 .scroll-to-top:hover {
     background-color: var(--bg-color-green);
 }
+ 
 
 html,
 body {

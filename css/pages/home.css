@@ -19,6 +19,7 @@
     position: fixed;
     border-bottom: 1px solid #eee;
     background: var(--bg-color-white);
+    z-index: 1000;
     
 }
 .container.header > .row {
@@ -107,6 +108,43 @@
 /* Our services: end */
 
 /* Our projects: start */
+.projects {
+  background-image: url("/img/projects-section-6/Bg-Static-map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.border {
+  border: 1px dashed gainsboro;
+  border-radius: 5px; 
+}
+
+.projQuestions {
+    position: relative;
+    padding: 25px 25px;
+}
+
+.projectsNumbers {
+  font-size: 30px;
+  color: var(--bg-color-green);
+}
+
+.projectsPositioning {
+    padding: 53px;
+    text-align: center;
+}
+
+.projH {
+    display: block;
+    padding: 5px;
+}
+
+.projQuestions > a {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Our projects: end */
 
 /* Custom designs: start */
@@ -116,14 +154,18 @@
 .pricing {
     position: relative;
 }
-
+.pricing > .pricing-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .moving-img-7 {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.pricing-boxes {
+.pricing-box {
     height: 500px;
     margin: 10px;
     background: var(--bg-color-gradient);
@@ -134,6 +176,7 @@
 .month-pricing {
     font-size: 30px;
     color: #000;
+    font-weight: 700;
 }
 .benefits-list {
     display: block;
@@ -141,6 +184,7 @@
     padding-left: 40px;
     text-align: left;
     list-style-type: none;
+    color: var(--bg-color-secondary-font);
 }
 .benefits-list.fa-check::before {
     font-size: 0.85em;
@@ -195,6 +239,22 @@
 /* News: end */
 
 /* contacts: start */
+.contacts {
+  position: relative;
+  background: url(/img/contacts-section-12/agency-gradient-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 280px;
+}
+
+.contacts-link {
+  position: absolute;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* contacts: end */
 
 /* footer: start */
@@ -203,6 +263,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: #F7FAFD;
+    padding-bottom: 0;
 }
 .logo-margin {
   margin-bottom: 20px;
@@ -213,16 +274,21 @@
   margin-bottom: 20px;
 }
 .footer-links > li,
-.footer-links > li > a {
+.footer-links > li > a,
+.footer-links > li > p > a {
   text-decoration: none;
   list-style-type: none;
-  padding: 5px 0 5px 0;
-  display: block;
+  padding-bottom: 9px;
+  color: var(--bg-color-secondary-font);
+  transition: all 0.7s;
 }
-
-.footer-links > li > i,
-.footer-links > li > p {
-  display: inline;
+.footer-links > li {
+  display: flex;
+}
+.footer-links > li > a:hover,
+.footer-links > li > p > a:hover {
+  color: var(--bg-color-green);
+  margin-left: 5px;
 }
 
 .footer-icons > a > i {
@@ -305,4 +371,11 @@
 .copyright-a:not(:hover) {
   transition: 0.7s;
 }
+.fa-map-marker,
+.fa-envelope-o,
+.fa-volume-control-phone {
+  padding: 4px 8px 4px 4px;
+}
+
+
 /* footer: end */

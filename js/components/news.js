@@ -4,11 +4,11 @@ function renderNews(selector, data) {
 
     for (const item of data) {
         HTML += `
-            <div>
-            <div>
+    <div>
+        <div>
               <a href="#"><img src="${item.scr}" alt="${item.alt}" /></a>
-            </div>
-            <div>
+        </div>
+        <div>
               <ul>
                 <li>
                   <a href="#">${item.admin} </a>
@@ -18,9 +18,10 @@ function renderNews(selector, data) {
               <h3>
                 <a href="#"> ${item.header} </a>
               </h3>
-              <a href="#">${item.more}</a>
-            </div>
-          </div>`;
+            <a href="#">${item.more}</a>
+        </div>
+    </div>
+          `;
     }
 
     DOM.innerHTML = HTML;

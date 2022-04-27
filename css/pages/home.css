@@ -237,8 +237,17 @@
 
 /* News: start */
 .news-section {
-  display: inline-block;
+ width: 100%;
+ display: inline-block;
+ }
+.news-section img {
+  width: 80%;
+  border-radius: 10px;
+ }
+.news-section li {
+  list-style-type: none;
 }
+
 /* News: end */
 
 /* contacts: start */

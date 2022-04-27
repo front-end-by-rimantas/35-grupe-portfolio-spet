@@ -104,7 +104,58 @@
 /* About us: end */
 
 /* Our services: start */
+.container .our-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.our-services img {
+  width: 100%;
+  border-radius: 15px;
+}
+.our-services > .col-12  {
+  position: relative;
+  width: 100%;
+ 
+  
+}
+@media (max-width: 1040px ) {
+ .container .our-services{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+  }
+  
+}
 
+@media (max-width: 771px ) {
+  .container .our-services{
+      display: grid;
+      grid-template-columns: 1fr ;
+      width: 80%;
+      
+   }
+   
+ }
+ .our-services .our-links {
+   position: absolute;
+   bottom: 0;
+   text-align: center;
+   width: 100%; 
+   background-color: #ccc;
+   border-radius: 10px;
+   
+   
+ }
+ .our-services  h3 {
+  width: 100%;
+ }
+
+.our-services  h3:hover  {
+  border: 1px solid red;
+
+}
 /* Our services: end */
 
 /* Our projects: start */

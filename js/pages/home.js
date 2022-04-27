@@ -53,6 +53,7 @@ pricingRendering('#pricing-block', pricingData);
 /* Testimonials: end */
 
 /* News: start */
+
 /* News: end */
 
 /* contacts: start */

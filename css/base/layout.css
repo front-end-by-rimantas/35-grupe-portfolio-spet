@@ -696,8 +696,6 @@
 
 /* scroll start */
 .scroll-to-top {
-    --offset: 300px; 
-    margin-top: calc(100vh + var(--offset));
     position: sticky;
     bottom: 2em;      
     right:0; 
@@ -712,11 +710,11 @@
     line-height: 1.1em;
     width: 2.2em;
     transition: 0.7s;
+    white-space: nowrap;
     
 }
 .scroll-to-top:hover {
     background-color: var(--bg-color-green);
-     
 }
 
 html,

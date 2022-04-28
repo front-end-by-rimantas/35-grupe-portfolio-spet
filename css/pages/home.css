@@ -178,6 +178,9 @@
     padding: 10px;
     background: var(--bg-color-gradient);
 }
+.pricing-box.yearly {
+  background: var(--bg-color-gradient-reverse)
+}
 .pricing-content > * {
     margin: 10px;
 }

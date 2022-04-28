@@ -11,6 +11,7 @@
     --btn-color-gradient-secondary: linear-gradient(135deg,#23bdb8,#43e794);
     --btn-color-gradient-third: linear-gradient(to left bottom,#fffcff,#fbfaff,#effbff,#e0fdff,#d5fefd);
     --btn-color-gradient-fourth: linear-gradient(to right top,#a3a3a3,#9a9a9a,#909090,#878787,#7e7e7e);
+    --bg-color-gradient-reverse: linear-gradient(to left bottom,#d5fefd,#e0fdff,#effbff,#fbfaff,#fffcff);
 }
 
 @font-face {

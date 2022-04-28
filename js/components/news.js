@@ -4,8 +4,8 @@ function renderNews(selector, data) {
 
     for (const item of data) {
         HTML += `
+    <div class="col-12 col-sm-6 col-md-4>
     <div>
-        <div>
               <a href="#"><img src="${item.scr}" alt="${item.alt}" /></a>
         </div>
         <div>
@@ -19,7 +19,7 @@ function renderNews(selector, data) {
                 <a href="#"> ${item.header} </a>
               </h3>
             <a href="#">${item.more}</a>
-        </div>
+            </div>
     </div>
           `;
     }

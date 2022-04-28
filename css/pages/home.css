@@ -237,11 +237,11 @@
 
 /* News: start */
 .news-section {
- width: 100%;
- display: inline-block;
+
+  
  }
 .news-section img {
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
  }
 .news-section li {

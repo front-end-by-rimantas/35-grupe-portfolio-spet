@@ -155,10 +155,14 @@
     position: flex;
 }
 .pricing > .pricing-flex {
+  display: none;
+}
+.pricing > .pricing-flex.active {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 
 .moving-img-7 {
     position: absolute;

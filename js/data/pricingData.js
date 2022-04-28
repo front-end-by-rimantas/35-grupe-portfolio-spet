@@ -35,7 +35,7 @@ const yearlyPricingData = [ {
 {
     title: 'Pro',
     currency: '$',
-    price: 149,
+    price: 249,
     period: 'y',
     button: 'Start 3 days free trial',
     subs: '3300',
@@ -43,7 +43,7 @@ const yearlyPricingData = [ {
 {
     title: 'Premium',
     currency: '$',
-    price: 179,
+    price: 279,
     period: 'y',
     button: 'Start 6 days free trial',
     subs: '10000',

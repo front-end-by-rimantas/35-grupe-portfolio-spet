@@ -54,12 +54,18 @@ function labas() {
 const monthlyButtonDOM = document.querySelector('#monthly-button');
 
 monthlyButtonDOM.addEventListener('click', function() {
-   
+    document.querySelector('#pricing-block-monthly').classList.add('active');
+    document.querySelector('#pricing-block-yearly').classList.remove('active');
 });
 
 const yearlyButtonDOM = document.querySelector('#yearly-button');
 
-yearlyButtonDOM.addEventListener('click', pricingRendering);
+yearlyButtonDOM.addEventListener('click', function() {
+//     const yearlyPricingDOM = document.querySelector('#pricing-block-yearly');
+//    yearlyPricingDOM.classList.add('active');
+   document.querySelector('#pricing-block-yearly').classList.add('active');
+   document.querySelector('#pricing-block-monthly').classList.remove('active');
+});
 // const monthlyPlans = document.querySelector('#monthly-button');
 // monthlyPlans.addEventListener('click');
 

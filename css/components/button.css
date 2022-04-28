@@ -102,7 +102,7 @@
 .btn-pricing.right-radius {
     border-radius: 0px 5px 5px 0px;
 }
-.btn.btn-pricing:focus {
+.btn.btn-pricing:focus{
     background: var(--bg-color-main-font);
     color: var(--bg-color-white);
 }

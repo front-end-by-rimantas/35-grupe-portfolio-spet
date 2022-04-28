@@ -152,22 +152,26 @@
 
 /* Pricing: start */
 .pricing {
-    position: relative;
+    position: flex;
 }
 .pricing > .pricing-flex {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .moving-img-7 {
     position: absolute;
     top: 0;
     left: 0;
 }
-
+.pricing-content {
+  padding: 15px;
+}
 .pricing-box {
-    height: 500px;
-    margin: 10px;
+    max-height: 700px;
+    margin: 20px;
+    padding: 10px;
     background: var(--bg-color-gradient);
 }
 .pricing-content > * {
@@ -181,7 +185,6 @@
 .benefits-list {
     display: block;
     margin-top: 15px;
-    padding-left: 40px;
     text-align: left;
     list-style-type: none;
     color: var(--bg-color-secondary-font);

@@ -1,5 +1,6 @@
 // component imports
-import { pricingData } from '../data/pricingData.js';
+import { monthlyPricingData } from '../data/pricingData.js';
+import { yearlyPricingData } from '../data/pricingData.js';
 import { pricingRendering } from '../components/pricing.js';
 // components execution
 
@@ -45,7 +46,22 @@ import { pricingRendering } from '../components/pricing.js';
 //     button: 'Start 3 days free trial',
 //     gg: '3300',
 // }]));
-pricingRendering('#pricing-block', pricingData);
+pricingRendering('#pricing-block-monthly', monthlyPricingData);
+pricingRendering('#pricing-block-yearly', yearlyPricingData);
+function labas() {
+    console.log('Labas vakaras');
+}
+const monthlyButtonDOM = document.querySelector('#monthly-button');
+
+monthlyButtonDOM.addEventListener('click', function() {
+   
+});
+
+const yearlyButtonDOM = document.querySelector('#yearly-button');
+
+yearlyButtonDOM.addEventListener('click', pricingRendering);
+// const monthlyPlans = document.querySelector('#monthly-button');
+// monthlyPlans.addEventListener('click');
 
 /* Pricing: end */
 

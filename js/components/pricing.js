@@ -84,11 +84,11 @@ function pricingRendering(selector, data) {
             continue;
         }
         HTML += `<div class="col-12 col-sm-6 col-lg-4 pricing-box">
-        <div class="center pricing-content">
-          <h3>${item.title}</h3>
-          <p>Get your business up<br> and running</p>
-          <p class="month-pricing">${item.currency}${item.price}/${item.period}</p>
-          <a href="#" class="btn btn-plans">${item.button ? item.button : 'Get Started'}</a>
+        <div class="pricing-content">
+          <h3 class="center">${item.title}</h3>
+          <p class="center">Get your business up<br> and running</p>
+          <p class="month-pricing center">${item.currency}${item.price}/${item.period}</p>
+          <a href="#" class="btn btn-plans center">${item.button ? item.button : 'Get Started'}</a>
           <ul class="benefits">
             <li class="benefits-list fa fa-check">Drag & Drop Builder</li>
             <li class="benefits-list fa fa-check">Lead Generation & Sales</li>

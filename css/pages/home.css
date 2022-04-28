@@ -43,6 +43,78 @@
 /* header: end */
 
 /* Hero: start */
+.hero {
+  overflow: hidden;
+  padding: 0;
+  z-index: -1;
+}
+
+.hero .row {
+ z-index: -1;
+ margin: 0;
+ width: 100%;
+
+}
+
+.hero .hero-img {
+  margin: 0;
+  float: right;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+@media (max-width: 989px) {
+  .hero-row > .hero-title, .hero-box {
+    text-align: center;
+    margin: 0;
+    margin-right: 0;  
+  }
+}
+
+@media (max-width: 989px) {
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    padding: 30px; 
+  }
+}
+
+@media (max-width: 840px) {
+  .hero-img  img {
+   padding: 30px;
+   max-width: 100%;
+  }
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-box {
+  margin-top: 250px;
+  width: 50%;
+
+}
+
+.hero-box > span {
+  color: var(--bg-color-secondary-font);
+  font-size: 18px;
+}
+
+.hero-box > p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-size: 15px;
+  width: 100%;
+}
+
+
 /* Hero: end */
 
 /* Featured solutions: start */

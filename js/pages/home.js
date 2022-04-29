@@ -1,6 +1,8 @@
 // component imports
-import { pricingData } from '../data/pricingData.js';
-import { pricingRendering } from '../components/pricing.js';
+import { monthlyPricingData } from '../data/pricingData.js';
+import { yearlyPricingData } from '../data/pricingData.js';
+import { monthlyPricingRendering } from '../components/pricing.js';
+import { yearlyPricingRendering } from '../components/pricing.js';
 // components execution
 
 /* header: start */
@@ -45,7 +47,26 @@ import { pricingRendering } from '../components/pricing.js';
 //     button: 'Start 3 days free trial',
 //     gg: '3300',
 // }]));
-pricingRendering('#pricing-block', pricingData);
+monthlyPricingRendering('#pricing-block-monthly', monthlyPricingData);
+yearlyPricingRendering('#pricing-block-yearly', yearlyPricingData);
+
+
+const monthlyButtonDOM = document.querySelector('#monthly-button');
+monthlyButtonDOM.addEventListener('click', function() {
+    document.querySelector('#monthly-button').classList.add('active');
+    document.querySelector('#yearly-button').classList.remove('active');
+    document.querySelector('#pricing-block-monthly').classList.add('active');
+    document.querySelector('#pricing-block-yearly').classList.remove('active');
+});
+const yearlyButtonDOM = document.querySelector('#yearly-button');
+yearlyButtonDOM.addEventListener('click', function() {
+    document.querySelector('#yearly-button').classList.add('active');
+    document.querySelector('#monthly-button').classList.remove('active');
+    document.querySelector('#pricing-block-yearly').classList.add('active');
+    document.querySelector('#pricing-block-monthly').classList.remove('active');
+});
+// const monthlyPlans = document.querySelector('#monthly-button');
+// monthlyPlans.addEventListener('click');
 
 /* Pricing: end */
 

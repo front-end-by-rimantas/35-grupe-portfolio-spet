@@ -63,7 +63,7 @@ function validDataItem(item) {
 }
 
 
-function pricingRendering(selector, data) {
+function monthlyPricingRendering(selector, data) {
     const selectorRespond = validSelector(selector);
     if (selectorRespond[0]) {
         return selectorRespond;
@@ -84,11 +84,11 @@ function pricingRendering(selector, data) {
             continue;
         }
         HTML += `<div class="col-12 col-sm-6 col-lg-4 pricing-box">
-        <div class="center pricing-content">
-          <h3>${item.title}</h3>
-          <p>Get your business up<br> and running</p>
-          <p class="month-pricing">${item.currency}${item.price}/${item.period}</p>
-          <a href="#" class="btn btn-plans">${item.button ? item.button : 'Get Started'}</a>
+        <div class="pricing-content">
+          <h3 class="center">${item.title}</h3>
+          <p class="center">Get your business up<br> and running</p>
+          <p class="month-pricing center">${item.currency}${item.price}/${item.period}</p>
+          <a href="#" class="btn btn-plans center">${item.button ? item.button : 'Get Started'}</a>
           <ul class="benefits">
             <li class="benefits-list fa fa-check">Drag & Drop Builder</li>
             <li class="benefits-list fa fa-check">Lead Generation & Sales</li>
@@ -108,4 +108,51 @@ function pricingRendering(selector, data) {
     return [false, 'OK'];
 }
 
-export { pricingRendering };
+
+function yearlyPricingRendering(selector, data) {
+    const selectorRespond = validSelector(selector);
+    if (selectorRespond[0]) {
+        return selectorRespond;
+    }
+    const DOM = document.querySelector(selector);
+    if (!DOM) {
+        return [true, 'Nepavyko rasti selectoriaus elemento'];
+    }
+    const dataRespond = validData(data)
+    if (dataRespond[0]) {
+        return dataRespond;
+    }
+
+    let HTML = '';
+
+    for (const item of data) {
+        if (!validDataItem(item)) {
+            continue;
+        }
+        HTML += `<div class="col-12 col-sm-6 col-lg-4 pricing-box yearly">
+        <div class="pricing-content">
+          <h3 class="center">${item.title}</h3>
+          <p class="center">Get your business up<br> and running</p>
+          <p class="month-pricing center">${item.currency}${item.price}/${item.period}</p>
+          <a href="#" class="btn btn-plans center">${item.button ? item.button : 'Get Started'}</a>
+          <ul class="benefits">
+            <li class="benefits-list fa fa-check">Drag & Drop Builder</li>
+            <li class="benefits-list fa fa-check">Lead Generation & Sales</li>
+            <li class="benefits-list fa fa-check">Boot & Digital Assistants</li>
+            <li class="benefits-list fa fa-check">Customer Service</li>
+            <li class="benefits-list fa fa-check">Up to ${item.subs} Subscribers</li>
+            <li class="benefits-list fa fa-check">Unlimited Broadcasts</li>
+            <li class="benefits-list fa fa-check">Landing Pages & Web Widgets</li>
+          </ul>
+        </div>
+      </div>`
+    }
+    if (HTML === '') {
+        return [true, 'Gautuose duomenyse nerasta nei vieno teisingo objekto'];
+    }
+    DOM.innerHTML = HTML;
+    return [false, 'OK'];
+}
+
+export { monthlyPricingRendering };
+export { yearlyPricingRendering };

@@ -17,14 +17,14 @@
     margin-bottom: 0;
     padding: 0;
     position: fixed;
-    border-bottom: 1px solid #eee;
     background: var(--bg-color-white);
     z-index: 1000;
-      
+    box-shadow: 0 0 10px #eee;  
 }
 .container.header.transparent {
     background: transparent;
     border-bottom: none;
+    box-shadow: none;
 }
 .container.header > .row {
     margin: 20px;

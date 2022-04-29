@@ -17,9 +17,10 @@
     margin-bottom: 0;
     padding: 0;
     position: fixed;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     background: var(--bg-color-white);
     z-index: 1000;
+    background: transparent;
     
 }
 .container.header > .row {
@@ -224,7 +225,7 @@
 
 /* Pricing: start */
 .pricing {
-    position: flex;
+    position: relative;
 }
 .pricing > .pricing-flex {
   display: none;

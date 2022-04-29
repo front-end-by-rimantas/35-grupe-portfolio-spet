@@ -60,3 +60,19 @@ pricingRendering('#pricing-block', pricingData);
 
 /* footer: start */
 /* footer: end */
+
+/* scroll to top button: start */
+function scrollToTop() {
+    const scrollPosition = 400;
+    if (scrollY > scrollPosition) {
+        scrollDOM.classList.add('scroll-to-top');
+    } else {
+        scrollDOM.classList.remove('scroll-to-top');
+    }
+}
+const scrollDOM = document.querySelector('.scroll-to-top-hidden');
+addEventListener('scroll', scrollToTop);
+scrollToTop();
+
+/* scroll to top button: end */
+

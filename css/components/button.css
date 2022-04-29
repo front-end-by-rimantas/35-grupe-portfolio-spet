@@ -98,6 +98,8 @@
     background: var(--btn-color-gradient-third);
     color: var(--bg-color-main-font);
     border-radius: 5px 0px 0px 5px;
+    margin-left: -2px;
+    margin-right: -2px;
 }
 .btn-pricing.right-radius {
     border-radius: 0px 5px 5px 0px;

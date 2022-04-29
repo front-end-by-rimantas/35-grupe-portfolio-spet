@@ -107,7 +107,7 @@
 .container .our-services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
+  gap: 35px;
   justify-content: center;
   align-items: center;
 }
@@ -140,21 +140,53 @@
  }
  .our-services .our-links {
    position: absolute;
-   bottom: 0;
+   bottom: -20px;
+   right: 50%;
+   transform: translate(50%) ;
    text-align: center;
-   width: 100%; 
-   background-color: #ccc;
+   height: 25%;
+   width: 75%; 
+   background-color: #fff;
    border-radius: 10px;
+   transition: 0.6s;
    
    
  }
  .our-services  h3 {
-  width: 100%;
+  
  }
 
-.our-services  h3:hover  {
-  border: 1px solid red;
+ .our-services  a {
+  text-decoration: none;
+  color: var(--bg-color-main-font);
+}
+.our-services  .our-links:hover {
+  bottom: 0;
+  right: 50%;
+  
+}
 
+.our-services  .our-links a:hover {
+ 
+  color: var(--bg-color-green);
+}
+
+.hidden-link {
+  opacity: 0;
+  width: 50%;
+  position: absolute;
+  top: 60px;
+  transform: translate(-50%);
+  transition: 0.6s;
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+.our-services a:hover {
+  top: 10;
+  display: inline;
+  opacity: 1;
+  
 }
 /* Our services: end */
 

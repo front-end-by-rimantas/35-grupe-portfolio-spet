@@ -5,7 +5,7 @@ function renderNews(selector, data) {
     for (const item of data) {
         HTML += `
       <div class="col-sm-12 col-md-6 col-lg-4">
-        <div>
+        <div class="visible-more">
           <div>
             <a href="#"><img src="${item.scr}" alt="${item.alt}" /></a>
           </div>
@@ -19,7 +19,7 @@ function renderNews(selector, data) {
             <h3>
               <a href="#"> ${item.header} </a>
             </h3>
-            <a href="#">${item.more}</a>
+            <a href="#">${item.more} <span>+</span> </a>
           </div>
         </div>
       </div>

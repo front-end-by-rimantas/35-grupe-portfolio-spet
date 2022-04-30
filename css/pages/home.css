@@ -255,12 +255,23 @@ gap: 20px 0;
 }
 .news-card {
   background: var(--bg-color-gradient);
-  padding: 0.5em;
+  padding: 0.7em;
   width: 94%;
   position: relative;
   left: 3%;
   bottom: 1.3em;
   border-radius: 10px;
+  transition: 0.7s
+}
+
+.visible-more:hover .news-card{
+ bottom: 2.5em;
+ padding-top: 0;
+ padding-bottom: 1.4em;
+ }
+.visible-more:hover a{
+  opacity: 100;
+  
 }
 .news-card ul {
   display: flex;
@@ -271,12 +282,19 @@ gap: 20px 0;
 .news-card ul > li > a {
   color: var(--bg-color-secondary-font);
   font-size: 14px;
+  transition: 0.7s;
 }
 .news-card h3 {
   padding: 5px 0 20px 0;
 }
+
 .news-card h3 > a{
 color: var(--bg-color-main-font);
+transition: 0.7s;
+}
+.news-card h3 > a:hover,
+.news-card ul > li > a:hover {
+  color: var(--bg-color-green);
 }
 .news-card > a {
   color: var(--bg-color-main-font);
@@ -289,8 +307,8 @@ color: var(--bg-color-main-font);
   border: 1px solid rgb(228, 225, 225);
   font-size: smaller;
   line-height: 25px;
-  visibility: hidden;
-  transition: 0.5s;
+  opacity: 0;
+  transition: 0.7s;
 }
 .news-card > a > span {
   border: 1px solid var(--bg-color-main-font);
@@ -299,12 +317,16 @@ color: var(--bg-color-main-font);
   padding: 0 5px;
   text-align: center;
   line-height: 25px;
-}
-
-}
-.visible-more:hover a{
-  visibility: visible;
   
+}
+.news-card > a:hover {
+  color: white;
+  background-color: var(--bg-color-green);
+  font-weight: bold;
+}
+.news-card > a:hover span {
+  border: 1px solid white;
+
 }
 
 /* News: end */
@@ -371,6 +393,7 @@ color: var(--bg-color-main-font);
   text-align: center;
   margin-top: 5px;
   display: inline-block;
+  transition: 0.5s;
 }
 .fa-facebook {
   -webkit-text-stroke: 1px var(--bg-color-secondary-font);

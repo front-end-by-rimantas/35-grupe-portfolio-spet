@@ -237,7 +237,10 @@
 
 /* News: start */
 .news-section {
-
+display: flex !important;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px 0;
   
  }
 .news-section img {
@@ -247,7 +250,26 @@
 .news-section li {
   list-style-type: none;
 }
-
+.news-section a {
+  text-decoration: none;
+}
+.news-card {
+  background: var(--bg-color-gradient);
+  padding: 0.5em;
+  width: 94%;
+  position: relative;
+  left: 3%;
+  bottom: 1.3em;
+  border-radius: 10px;
+}
+.news-card ul {
+  display: flex;
+  gap: 5px;
+  padding: 1em 0;
+}
+.news-card ul > li {
+  color: var(--bg-color-secondary-font);
+}
 /* News: end */
 
 /* contacts: start */

@@ -4,17 +4,17 @@ function renderNews(selector, data) {
 
     for (const item of data) {
         HTML += `
-        <div class="col-sm-12 col-md-6 ml-0 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
         <div>
           <div>
             <a href="#"><img src="${item.scr}" alt="${item.alt}" /></a>
           </div>
-          <div>
+          <div class="news-card">
             <ul>
               <li>
                 <a href="#">${item.admin} </a>
               </li>
-              <li>${item.day}</li>
+              <li><span>|  </span> ${item.day}</li>
             </ul>
             <h3>
               <a href="#"> ${item.header} </a>

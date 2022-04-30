@@ -393,6 +393,7 @@ transition: 0.7s;
   text-align: center;
   margin-top: 5px;
   display: inline-block;
+  transition: 0.5s;
 }
 .fa-facebook {
   -webkit-text-stroke: 1px var(--bg-color-secondary-font);

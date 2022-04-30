@@ -6,6 +6,18 @@ import { yearlyPricingRendering } from '../components/pricing.js';
 // components execution
 
 /* header: start */
+function scrollFunc() {
+    const scroll = 200;
+    if (scroll > scrollY) {
+        headerDOM.classList.add('transparent');
+    } else {
+        headerDOM.classList.remove('transparent');
+        
+    }
+}
+const headerDOM = document.querySelector('.container.header');
+window.addEventListener('scroll', scrollFunc);
+scrollFunc();
 /* header: end */
 
 /* Hero: start */

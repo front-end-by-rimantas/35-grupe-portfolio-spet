@@ -11,8 +11,8 @@
 
 .header-btn {
     float: right;
-    margin-right: 20px;
-    padding: 0.5em 1em;
+    margin-right: 40px;
+    padding: 0.8em 2.5em;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -28,7 +28,7 @@
 }
 @media (min-width: 1200px) {
     .header-btn {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -98,6 +98,8 @@
     background: var(--btn-color-gradient-third);
     color: var(--bg-color-main-font);
     border-radius: 5px 0px 0px 5px;
+    margin-left: -2px;
+    margin-right: -2px;
 }
 .btn-pricing.right-radius {
     border-radius: 0px 5px 5px 0px;

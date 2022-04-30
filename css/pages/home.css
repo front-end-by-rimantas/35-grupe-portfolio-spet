@@ -7,8 +7,9 @@
 
 /* components */
 @import "../components/button.css";
-@import "../components/form.css";
 @import "../components/badge.css";
+@import "../components/form.css";
+@import '../components/slider.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -220,6 +221,9 @@
 /* Our projects: end */
 
 /* Custom designs: start */
+
+
+
 /* Customs designs: end */
 
 /* Pricing: start */

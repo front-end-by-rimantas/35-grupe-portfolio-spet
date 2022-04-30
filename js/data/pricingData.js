@@ -1,4 +1,4 @@
-const pricingData = [ {
+const monthlyPricingData = [ {
     title: 'Free',
     currency: '$',
     price: 0,
@@ -24,4 +24,32 @@ const pricingData = [ {
 },
 ];
 
-export { pricingData };
+const yearlyPricingData = [ {
+    title: 'Free',
+    currency: '$',
+    price: 0,
+    period: 'y',
+    button: 'Get Started Free',
+    subs: '1000',
+},
+{
+    title: 'Pro',
+    currency: '$',
+    price: 249,
+    period: 'y',
+    button: 'Start 3 days free trial',
+    subs: '3300',
+},
+{
+    title: 'Premium',
+    currency: '$',
+    price: 279,
+    period: 'y',
+    button: 'Start 6 days free trial',
+    subs: '10000',
+},
+];
+
+
+export { monthlyPricingData };
+export { yearlyPricingData };

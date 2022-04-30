@@ -694,6 +694,42 @@
     }
 }
 
+/* scroll start */
+.scroll-to-top-hidden {
+    visibility: hidden;
+    position: fixed;
+    bottom: 2em;      
+    right:0;
+    text-decoration: none;
+    padding: 10px 7px;
+    color: #fff;
+    background-color: var(--bg-color-purple);
+    border-radius: 10px 0 0 10px;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.1em;
+    width: 0em;
+    transition: 0.7s;
+    
+
+}
+.scroll-to-top {
+    visibility: visible;
+    width: 2.2em;
+    
+}
+.scroll-to-top:hover {
+    background-color: var(--bg-color-green);
+}
+ 
+
+html,
+body {
+scroll-behavior: smooth;
+}
+/* scroll end */
+
 /* @media (min-width: 1399px) {
   :root {
     --container-padding: 80px;

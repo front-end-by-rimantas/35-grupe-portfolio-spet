@@ -1,4 +1,5 @@
-// component imports
+import { newsData } from '../data/newsData.js';
+import { renderNews } from '../components/news.js';
 import { monthlyPricingData } from '../data/pricingData.js';
 import { yearlyPricingData } from '../data/pricingData.js';
 import { monthlyPricingRendering } from '../components/pricing.js';
@@ -86,6 +87,7 @@ yearlyButtonDOM.addEventListener('click', function() {
 /* Testimonials: end */
 
 /* News: start */
+const [newsContent] = renderNews('#news_section', newsData);
 /* News: end */
 
 /* contacts: start */

@@ -288,6 +288,7 @@
     background: var(--bg-color-gradient);
     position: relative;
     height: 800px;
+    z-index: 1;
 }
 
 .moving-img-1 {
@@ -300,6 +301,7 @@
     position: absolute;
     top: 350px;
     left: 150px;
+    z-index: -1;
 }
 .moving-img-3 {
     position: absolute;
@@ -315,6 +317,7 @@
     position: absolute;
     top: 350px;
     right: 150px;
+    z-index: -1;
 }
 .moving-img-6 {
     position: absolute;

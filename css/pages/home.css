@@ -231,7 +231,7 @@
 
 /* Pricing: start */
 .pricing {
-    position: flex;
+    position: relative;
 }
 .pricing > .pricing-flex {
   display: none;

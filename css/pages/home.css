@@ -107,18 +107,18 @@
 .container .our-services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 35px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
 }
 .our-services img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .our-services > .col-12  {
   position: relative;
   width: 100%;
- 
+  margin-bottom: 30px;
   
 }
 @media (max-width: 1040px ) {
@@ -140,54 +140,65 @@
  }
  .our-services .our-links {
    position: absolute;
-   bottom: -20px;
-   right: 50%;
-   transform: translate(50%) ;
+   bottom: -30px;
+   height: 50px;
+   display: flex;
+   flex-wrap: wrap;
    text-align: center;
-   height: 25%;
-   width: 75%; 
-   background-color: #fff;
-   border-radius: 10px;
+   justify-content: center;
+   width: 100%; 
    transition: 0.6s;
    
-   
  }
+ /*transform: translate(-50%);*/
  .our-services  h3 {
-  
+  position: absolute;
+  padding: 10px;
+  margin-bottom: 15px;
+  height: 70px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  width: 90%;
+  background-color: var(--bg-color-white);
  }
+ .hidden-link a{
+  position: relative;
+  top: 40px;
+  width: 50%;
+  transition: 0.6s;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: var(--bg-color-main-font);
+  background-color: var(--bg-color-white);
+  opacity: 0;
+}
+.hidden-link {
+  position: absolute;
+  top: 50px;
+  width: 40%;
+  font-size: 14px;
+  bottom: -20px;
+  opacity: 0;
+  color: var(--bg-color-main-font);
+}
+.our-links  .hidden-link {
+  border: 1px solid black;
+  border-radius: 15px;
+}
 
  .our-services  a {
   text-decoration: none;
   color: var(--bg-color-main-font);
 }
 .our-services  .our-links:hover {
-  bottom: 0;
-  right: 50%;
-  
+  bottom: 1em;
+  opacity: 100;
 }
 
-.our-services  .our-links a:hover {
- 
-  color: var(--bg-color-green);
+.hidden-link:hover {
+  opacity: 100;
 }
 
-.hidden-link {
-  opacity: 0;
-  width: 50%;
-  position: absolute;
-  top: 60px;
-  transform: translate(-50%);
-  transition: 0.6s;
-  border: 1px solid red;
-  border-radius: 15px;
-}
-
-.our-services a:hover {
-  top: 10;
-  display: inline;
-  opacity: 1;
-  
-}
 /* Our services: end */
 
 /* Our projects: start */

@@ -51,43 +51,45 @@
 
     <!-- Header: start -->
 
-    <header class="container header">
+    <header class="container header transparent">
       <div class="row">
-        <div class="col-12">
-          <img src="./img/logo.png" alt="Logo">
+        <div class="col-12 header-content">
+          <a href="#"><img src="./img/logo.png" alt="Logo"></a>
           <nav class="hidden visible-md navigation">
             <a href="#" class="nav-links">Home<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             <a href="#" class="nav-links">About<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <a href="#" class="nav-links">Pages<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#" class="nav-links">Pages <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             <a href="#" class="nav-links">Shop<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             <a href="#" class="nav-links">Blog<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             <a href="#" class="nav-links">Contacts</a> 
           </nav>
-          <a href="#" class="btn header-btn header-btn-lg btn-gradient">Contact us</a>
+          <a href="#" class="hidden visible-md btn header-btn header-btn-lg btn-gradient">Contact us</a>
         </div>
+        
       </div>
     </header>
 
     <!-- header: end -->
-
+    
     <!-- Hero: start -->
-      <section class="container">
-        <div class="row"> 
-          <div class="col-12 col-lg-6">
-            <span class="badge">We are creative</span>
-            <h1>Digital Agency</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            <a href="#" class="btn btn-hero-about">Get started</a>
+      <section class="container hero ">
+        <div class="row hero-row "> 
+          <div class="col-12 col-lg-6  col-md-12 hero-title ">
+            <div class="hero-box">
+              <span >We are creative</span>
+              <h1>Digital Agency</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <a href="#" class="btn btn-hero-about">Get started</a>
+            </div>
           </div>
-          <div class="col-12 col-lg-6">
-            <img src="./img/hero-section-2/section-1-main.png" alt="banner image">
+          <div class="col-12 col-lg-6 col-md-12  hero-img">
+            <img src="./img/hero-section-2/section-1-main.png "  alt="banner image">
           </div>
         </div>
       </section>
     <!-- Hero: end -->
 
     <!-- Featured solutions: start -->
-
     <section class="container solutions">
       <img src="./img/solutions-section-3/moving-img.png" alt="img" class="solutions-moving-img anim-downUp">
       <div class="row">      
@@ -341,15 +343,15 @@
       </div>
       <div  class="row">
         <div class="col-12 center">
-          <button class="btn btn-pricing">
+          <button class="btn btn-pricing active" id="monthly-button">
             Monthly Plan
           </button>
-          <button class="btn btn-pricing right-radius">
+          <button class="btn btn-pricing right-radius" id="yearly-button">
             Yearly Plan
           </button>
         </div>
       </div>
-      <div class="row center pricing-flex" id="pricing-block">
+      <div class="row center pricing-flex active" id="pricing-block-monthly">
               <!-- <div class="col-12 col-sm-6 col-lg-4 pricing-box">
                 <div class="center pricing-content">
                   <h3>Free</h3>
@@ -373,6 +375,8 @@
               <div class="col-12 col-sm-6 ml-sm-3 col-lg-4 ml-lg-0 pricing-box">
                 Premium
               </div> -->
+      </div>
+      <div class="row center pricing-flex" id="pricing-block-yearly">
       </div>
       <div class="moving-img-7 anim-downUp"><img src="./img/pricing-section-8/moving-img.png" alt="movingImg"></div>
     </section>
@@ -409,75 +413,19 @@
     <!-- News: start -->
     <section class="container">
       <div class="row">
-        <div class="col-12 center">
-          <span class="badge">News</span>
-          <h2 class="section-title">The News From Our Blog</h2>
-          <hr>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
+          <div class="col-12 center">
+            <span class="badge">News</span>
+            <h2 class="section-title">The News From Our Blog</h2>
+            <hr>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
       </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-6 ml-0 col-lg-4">
-          <div>
-            <div>
-              <a href="#"><img src="#" alt="photo" /></a>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <a href="#">Admin </a>
-                </li>
-                <li>August 15, 2021</li>
-              </ul>
-              <h3>
-                <a href="#"> The security risks of changing package owners </a>
-              </h3>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 ml-0 col-lg-4">
-          <div>
-            <div>
-              <a href="#"><img src="#" alt="photo" /></a>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <a href="#">Admin </a>
-                </li>
-                <li>August 15, 2021</li>
-              </ul>
-              <h3>
-                <a href="#"> Tips to Protecting Your Business and Family </a>
-              </h3>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 ml-sm-0 col-md-6 ml-md-3 col-lg-4 ml-lg-0">
-          <div>
-            <div>
-              <a href="#"><img src="#" alt="photo" /></a>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <a href="#">Admin </a>
-                </li>
-                <li>August 15, 2021</li>
-              </ul>
-              <h3>
-                <a href="#"> Protect Your Workplace from Cyber Attacks </a>
-              </h3>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
+      <div id="news_section" class="row news-section">
       </div>
+      
     </section>
     <!-- News: end -->
 
@@ -570,6 +518,10 @@
       </div>
     </section>
     <!-- footer: end -->
+    <!-- scroll to top: start -->
+    <a href="#" class="scroll-to-top-hidden">&uarr;</a>
+    <!-- scroll to top: end -->
+
 
     <script src="./js/pages/home.js" defer type="module"></script>
   </body>

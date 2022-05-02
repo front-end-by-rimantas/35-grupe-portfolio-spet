@@ -17,21 +17,28 @@
     margin-bottom: 0;
     padding: 0;
     position: fixed;
-    border-bottom: 1px solid #eee;
     background: var(--bg-color-white);
     z-index: 1000;
-    
+    box-shadow: 0 0 10px #eee;  
+}
+.container.header.transparent {
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
 }
 .container.header > .row {
     margin: 20px;
     width: 100%;
 }
-
+.row > .header-content > .navigation {
+  margin-top: 10px;
+}
 .navigation > .nav-links {
     text-decoration: none;
     color: var(--bg-color-secondary-font);
     margin-left: 20px;
     height: 39px;
+    font-size: 14px;
 }
 .navigation > .nav-links:hover {
     color: var(--bg-color-green);
@@ -43,6 +50,78 @@
 /* header: end */
 
 /* Hero: start */
+.hero {
+  overflow: hidden;
+  padding: 0;
+  z-index: -1;
+}
+
+.hero .row {
+ z-index: -1;
+ margin: 0;
+ width: 100%;
+
+}
+
+.hero .hero-img {
+  margin: 0;
+  float: right;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+@media (max-width: 989px) {
+  .hero-row > .hero-title, .hero-box {
+    text-align: center;
+    margin: 0;
+    margin-right: 0;  
+  }
+}
+
+@media (max-width: 989px) {
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    padding: 30px; 
+  }
+}
+
+@media (max-width: 840px) {
+  .hero-img  img {
+   padding: 30px;
+   max-width: 100%;
+  }
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-box {
+  margin-top: 250px;
+  width: 50%;
+
+}
+
+.hero-box > span {
+  color: var(--bg-color-secondary-font);
+  font-size: 18px;
+}
+
+.hero-box > p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  font-size: 15px;
+  width: 100%;
+}
+
+
 /* Hero: end */
 
 /* Featured solutions: start */
@@ -152,23 +231,34 @@
 
 /* Pricing: start */
 .pricing {
-    position: relative;
+    position: flex;
 }
 .pricing > .pricing-flex {
+  display: none;
+}
+.pricing > .pricing-flex.active {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
+
 .moving-img-7 {
     position: absolute;
     top: 0;
     left: 0;
 }
-
+.pricing-content {
+  padding: 15px;
+}
 .pricing-box {
-    height: 500px;
-    margin: 10px;
+    max-height: 700px;
+    margin: 20px;
+    padding: 10px;
     background: var(--bg-color-gradient);
+}
+.pricing-box.yearly {
+  background: var(--bg-color-gradient-reverse)
 }
 .pricing-content > * {
     margin: 10px;
@@ -181,7 +271,6 @@
 .benefits-list {
     display: block;
     margin-top: 15px;
-    padding-left: 40px;
     text-align: left;
     list-style-type: none;
     color: var(--bg-color-secondary-font);
@@ -236,6 +325,99 @@
 /* Testimonials: end */
 
 /* News: start */
+.news-section {
+display: flex !important;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px 0;
+  
+ }
+.news-section img {
+  width: 100%;
+  border-radius: 10px;
+ }
+.news-section li {
+  list-style-type: none;
+}
+.news-section a {
+  text-decoration: none;
+}
+.news-card {
+  background: var(--bg-color-gradient);
+  padding: 0.7em;
+  width: 94%;
+  position: relative;
+  left: 3%;
+  bottom: 1.3em;
+  border-radius: 10px;
+  transition: 0.7s
+}
+
+.visible-more:hover .news-card{
+ bottom: 2.5em;
+ padding-top: 0;
+ padding-bottom: 1.4em;
+ }
+.visible-more:hover a{
+  opacity: 100;
+  
+}
+.news-card ul {
+  display: flex;
+  gap: 5px;
+  padding: 1em 0;
+}
+.news-card ul > li,
+.news-card ul > li > a {
+  color: var(--bg-color-secondary-font);
+  font-size: 14px;
+  transition: 0.7s;
+}
+.news-card h3 {
+  padding: 5px 0 20px 0;
+}
+
+.news-card h3 > a{
+color: var(--bg-color-main-font);
+transition: 0.7s;
+}
+.news-card h3 > a:hover,
+.news-card ul > li > a:hover {
+  color: var(--bg-color-green);
+}
+.news-card > a {
+  color: var(--bg-color-main-font);
+  position: absolute;
+  background-color: white;
+  padding: 7px 20px;
+  border-radius: 20px;
+  bottom: -20px;
+  left: 25px;
+  border: 1px solid rgb(228, 225, 225);
+  font-size: smaller;
+  line-height: 25px;
+  opacity: 0;
+  transition: 0.7s;
+}
+.news-card > a > span {
+  border: 1px solid var(--bg-color-main-font);
+  border-radius: 15px;
+  font-size: small;
+  padding: 0 5px;
+  text-align: center;
+  line-height: 25px;
+  
+}
+.news-card > a:hover {
+  color: white;
+  background-color: var(--bg-color-green);
+  font-weight: bold;
+}
+.news-card > a:hover span {
+  border: 1px solid white;
+
+}
+
 /* News: end */
 
 /* contacts: start */
@@ -300,6 +482,7 @@
   text-align: center;
   margin-top: 5px;
   display: inline-block;
+  transition: 0.5s;
 }
 .fa-facebook {
   -webkit-text-stroke: 1px var(--bg-color-secondary-font);

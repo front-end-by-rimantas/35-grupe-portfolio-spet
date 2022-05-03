@@ -31,8 +31,9 @@
 .projects-slider > .slides-view > .slides {
     display: flex;
     gap: 30px;
-    width: 275%;
-    transform: translateX(-27.3%);
+    width: 325%;
+    transform: translateX(-30.8%);
+    transition: all 1s;
 }
 
 .slides-view > .slides > .item {

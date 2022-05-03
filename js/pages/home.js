@@ -1,8 +1,11 @@
 // component imports
 import { monthlyPricingData } from '../data/pricingData.js';
 import { yearlyPricingData } from '../data/pricingData.js';
-import { monthlyPricingRendering } from '../components/pricing.js';
-import { yearlyPricingRendering } from '../components/pricing.js';
+import { monthlyPricingRendering } from '../components/pricing/pricing.js';
+import { yearlyPricingRendering } from '../components/pricing/pricing.js';
+import { interfaceData } from '../data/interfaceData.js';
+import { InterfaceCard } from '../components/slider/interface.js';
+import { Slider } from '../components/slider/slider.js';
 // components execution
 
 /* header: start */
@@ -24,6 +27,16 @@ import { yearlyPricingRendering } from '../components/pricing.js';
 /* Our projects: end */
 
 /* Custom designs: start */
+const projectsSlider = new Slider('#slider_interface', InterfaceCard, interfaceData, {
+    size: {
+        mobile: 1,
+        tablet: 2,
+        desktop: 4,
+    },
+    previousNext: true,
+    dots: true,
+});
+console.log(projectsSlider);
 /* Customs designs: end */
 
 /* Pricing: start */
